@@ -1,0 +1,321 @@
+{
+  "address": "0x3421C9eeCC859C2D18348d614a663c2C4153EB8d",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "Client__NotAuthorized",
+      "type": "error"
+    },
+    {
+      "inputs": [],
+      "name": "Client__NotInMempool",
+      "type": "error"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "EtherReceivedEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "offChainData",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "OffChainDataUpdatedEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "previousOwner",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "OwnershipTransferred",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "ReceivedNewRequestIdEvent",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "oracleAddress",
+          "type": "address"
+        }
+      ],
+      "name": "newOracleAddressEvent",
+      "type": "event"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "fallback"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_offChainData",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_id",
+          "type": "uint256"
+        }
+      ],
+      "name": "callback",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "owner",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "renounceOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_oracleInstanceAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setOracleInstanceAddress",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "name": "transferOwnership",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "updateOffChainData",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "transactionHash": "0x90776ec4330352b99d3eb7b8339b5850375d523d4e0905a7705c17c3e629cda5",
+  "receipt": {
+    "to": null,
+    "from": "0x802C196b50b9E343040da28D08160DAa4Ae6887a",
+    "contractAddress": "0x3421C9eeCC859C2D18348d614a663c2C4153EB8d",
+    "transactionIndex": 0,
+    "gasUsed": "397706",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000800000000000000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000020000000000000000000800000000000000000000000000000401400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000004000004",
+    "blockHash": "0x88d80129da3194d6f1b2ccea7cf66e6536df37e51830a150242f34ded0ac2a98",
+    "transactionHash": "0x90776ec4330352b99d3eb7b8339b5850375d523d4e0905a7705c17c3e629cda5",
+    "logs": [
+      {
+        "transactionIndex": 0,
+        "blockNumber": 370300,
+        "transactionHash": "0x90776ec4330352b99d3eb7b8339b5850375d523d4e0905a7705c17c3e629cda5",
+        "address": "0x3421C9eeCC859C2D18348d614a663c2C4153EB8d",
+        "topics": [
+          "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0",
+          "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "0x000000000000000000000000802c196b50b9e343040da28d08160daa4ae6887a"
+        ],
+        "data": "0x",
+        "logIndex": 0,
+        "blockHash": "0x88d80129da3194d6f1b2ccea7cf66e6536df37e51830a150242f34ded0ac2a98"
+      }
+    ],
+    "blockNumber": 370300,
+    "cumulativeGasUsed": "397706",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "6608a17313f90a6d3aae831bb5599186",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"Client__NotAuthorized\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"Client__NotInMempool\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"EtherReceivedEvent\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"offChainData\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"OffChainDataUpdatedEvent\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"ReceivedNewRequestIdEvent\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"oracleAddress\",\"type\":\"address\"}],\"name\":\"newOracleAddressEvent\",\"type\":\"event\"},{\"stateMutability\":\"payable\",\"type\":\"fallback\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_offChainData\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"_id\",\"type\":\"uint256\"}],\"name\":\"callback\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"_oracleInstanceAddress\",\"type\":\"address\"}],\"name\":\"setOracleInstanceAddress\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"updateOffChainData\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"stateMutability\":\"payable\",\"type\":\"receive\"}],\"devdoc\":{\"author\":\"vidhan.mangla@mqube.com\",\"details\":\"will add later if necessary\",\"kind\":\"dev\",\"methods\":{\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner.\"},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"}},\"title\":\"client contract\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"callback(uint256,uint256)\":{\"notice\":\"updates the offChainData received\"},\"setOracleInstanceAddress(address)\":{\"notice\":\"set the address of an oracle instance\"},\"updateOffChainData()\":{\"notice\":\"receives the request id from the oracle\"}},\"notice\":\"this contract uses the oracle interface to interact and pull decentralized data from the oracle\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Client.sol\":\"Client\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":1000},\"remappings\":[]},\"sources\":{\"contracts/Client.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\n\\n/// @dev it is recommended that Solidity contracts are fully annotated using NatSpec for all public interfaces (everything in the ABI)\\n/// @dev documentation is inserted above each contract, interface, library, function, and event using NatSpec notation format\\n/// @dev a public state variable is equivalent to a function for the purposes of NatSpec\\n\\n\\npragma solidity 0.8.19;\\n\\n\\nimport \\\"./Interfaces/OracleInterface.sol\\\";\\nimport \\\"./Interfaces/Ownable.sol\\\";\\n\\n\\n/* ERRORS */\\n\\nerror Client__NotInMempool();\\nerror Client__NotAuthorized();\\n\\n\\n/// @title client contract\\n/// @author vidhan.mangla@mqube.com\\n/// @notice this contract uses the oracle interface to interact and pull decentralized data from the oracle\\n/// @dev will add later if necessary\\ncontract Client is Ownable {\\n\\n\\n  /* STATE VARIABLES */\\n\\n  uint256 private offChainData;\\n  OracleInterface private oracleInstance;\\n  address private oracleAddress;\\n\\n\\n  /* MAPPINGS */\\n\\n  mapping(uint256=>bool) myRequests;\\n\\n\\n  /* EVENTS */\\n\\n  event newOracleAddressEvent(address oracleAddress);\\n  event ReceivedNewRequestIdEvent(uint256 id);\\n  event OffChainDataUpdatedEvent(uint256 offChainData, uint256 id);\\n  event EtherReceivedEvent(address sender, uint256 amount);\\n\\n\\n  /* MODIFIERS */\\n\\n  modifier onlyOracle() {\\n    if (msg.sender != oracleAddress) {\\n      revert Client__NotAuthorized();\\n    }\\n    _;\\n  }\\n\\n\\n  /* FUNCTIONS */\\n\\n  /// @notice set the address of an oracle instance\\n  function setOracleInstanceAddress (address _oracleInstanceAddress) public onlyOwner {\\n    oracleAddress = _oracleInstanceAddress;\\n    oracleInstance = OracleInterface(oracleAddress);\\n    emit newOracleAddressEvent(oracleAddress);\\n  }\\n\\n  /// @notice receives the request id from the oracle\\n  function updateOffChainData() public {\\n    uint256 id = oracleInstance.getLatestOffChainData();\\n    myRequests[id] = true;\\n    emit ReceivedNewRequestIdEvent(id);\\n  }\\n\\n  /// @notice updates the offChainData received\\n  function callback(uint256 _offChainData, uint256 _id) public onlyOracle {\\n    // require(myRequests[_id], \\\"This request is not in my mempool.\\\");\\n    if (!myRequests[_id]) {\\n      revert Client__NotInMempool();\\n    }\\n    offChainData = _offChainData;\\n    delete myRequests[_id];\\n    emit OffChainDataUpdatedEvent(_offChainData, _id);\\n  }\\n\\n\\n  /* RECEIVE & FALLBACK FUNCTIONS */\\n\\n  /// @dev allows the contract to directly receive ether\\n  receive() external payable {\\n      emit EtherReceivedEvent(msg.sender, msg.value);\\n  }\\n\\n  /// @dev a catch-all for any ether sent to the contract in cases not covered by the receive function\\n  fallback() external payable {\\n      emit EtherReceivedEvent(msg.sender, msg.value);\\n  }\\n\\n\\n}\",\"keccak256\":\"0x29efd62611d5a8a7da0f14096ad902da0be08a8cd830e542dfab002105f5f487\",\"license\":\"MIT\"},\"contracts/Interfaces/Context.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts v4.4.1 (utils/Context.sol)\\n\\n\\npragma solidity 0.8.19;\\n\\n\\n/**\\n * @dev Provides information about the current execution context, including the\\n * sender of the transaction and its data. While these are generally available\\n * via msg.sender and msg.data, they should not be accessed in such a direct\\n * manner, since when dealing with meta-transactions the account sending and\\n * paying for execution may not be the actual sender (as far as an application\\n * is concerned).\\n *\\n * This contract is only required for intermediate, library-like contracts.\\n */\\ncontract Context {\\n\\n\\n    function _msgSender() internal view returns (address) {\\n        return msg.sender;\\n    }\\n\\n    function _msgData() internal pure returns (bytes memory) {\\n        return msg.data;\\n    }\\n\\n\\n}\\n\",\"keccak256\":\"0x7f0aec9a14e93d1b9dc3eac66926300f409c4e2aeb10a28b934c15557a011297\",\"license\":\"MIT\"},\"contracts/Interfaces/OracleInterface.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.19;\\n\\nabstract contract OracleInterface {\\n  function getLatestOffChainData() public virtual returns (uint256);\\n}\",\"keccak256\":\"0x85dba5adb35b9d068b7958463528e934fb3790d99e29773a802e2ab659278a69\",\"license\":\"MIT\"},\"contracts/Interfaces/Ownable.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n// OpenZeppelin Contracts (last updated v4.7.0) (access/Ownable.sol)\\n\\n\\npragma solidity 0.8.19;\\n\\n\\nimport \\\"./Context.sol\\\";\\n\\n\\n/**\\n * @dev Contract module which provides a basic access control mechanism, where\\n * there is an account (an owner) that can be granted exclusive access to\\n * specific functions.\\n *\\n * By default, the owner account will be the one that deploys the contract. This\\n * can later be changed with {transferOwnership}.\\n *\\n * This module is used through inheritance. It will make available the modifier\\n * `onlyOwner`, which can be applied to your functions to restrict their use to\\n * the owner.\\n */\\ncontract Ownable is Context {\\n\\n\\n    address private _owner;\\n\\n\\n    event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);\\n\\n\\n    /**\\n     * @dev Initializes the contract setting the deployer as the initial owner.\\n     */\\n    constructor() {\\n        _transferOwnership(_msgSender());\\n    }\\n\\n    /**\\n     * @dev Throws if called by any account other than the owner.\\n     */\\n    modifier onlyOwner() {\\n        _checkOwner();\\n        _;\\n    }\\n\\n    /**\\n     * @dev Returns the address of the current owner.\\n     */\\n    function owner() public view returns (address) {\\n        return _owner;\\n    }\\n\\n    /**\\n     * @dev Throws if the sender is not the owner.\\n     */\\n    function _checkOwner() internal view {\\n        require(owner() == _msgSender(), \\\"Ownable: caller is not the owner\\\");\\n    }\\n\\n    /**\\n     * @dev Leaves the contract without owner. It will not be possible to call\\n     * `onlyOwner` functions anymore. Can only be called by the current owner.\\n     *\\n     * NOTE: Renouncing ownership will leave the contract without an owner,\\n     * thereby removing any functionality that is only available to the owner.\\n     */\\n    function renounceOwnership() public onlyOwner {\\n        _transferOwnership(address(0));\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Can only be called by the current owner.\\n     */\\n    function transferOwnership(address newOwner) public onlyOwner {\\n        require(newOwner != address(0), \\\"Ownable: new owner is the zero address\\\");\\n        _transferOwnership(newOwner);\\n    }\\n\\n    /**\\n     * @dev Transfers ownership of the contract to a new account (`newOwner`).\\n     * Internal function without access restriction.\\n     */\\n    function _transferOwnership(address newOwner) internal {\\n        address oldOwner = _owner;\\n        _owner = newOwner;\\n        emit OwnershipTransferred(oldOwner, newOwner);\\n    }\\n\\n\\n}\\n\",\"keccak256\":\"0xeacc67fe5e6883ed87a9819345e379f912af83a98fe0dfdfcb3649978948fb77\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061001a3361001f565b61006f565b600080546001600160a01b038381166001600160a01b0319831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6105cc8061007e6000396000f3fe6080604052600436106100695760003560e01c8063b5d73ba411610043578063b5d73ba414610136578063e9e17a9e14610156578063f2fde38b14610176576100a9565b8063715018a6146100de57806383f87524146100f55780638da5cb5b1461010a576100a9565b366100a957604080513381523460208201527fc0cdab6ced19ce3372efda53aec6b0802e63718e5aa5b77807792330f5b5aab991015b60405180910390a1005b604080513381523460208201527fc0cdab6ced19ce3372efda53aec6b0802e63718e5aa5b77807792330f5b5aab9910161009f565b3480156100ea57600080fd5b506100f3610196565b005b34801561010157600080fd5b506100f36101aa565b34801561011657600080fd5b50600054604080516001600160a01b039092168252519081900360200190f35b34801561014257600080fd5b506100f361015136600461052b565b61028b565b34801561016257600080fd5b506100f361017136600461054d565b610370565b34801561018257600080fd5b506100f361019136600461054d565b6103df565b61019e610474565b6101a860006104ce565b565b600254604080517fb34c55f400000000000000000000000000000000000000000000000000000000815290516000926001600160a01b03169163b34c55f4916004808301926020929190829003018187875af115801561020e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610232919061057d565b60008181526004602052604090819020805460ff19166001179055519091507f3ed150819af981e387450beb90ec379b8b322150dbb299d492b108c59a623e4b906102809083815260200190565b60405180910390a150565b6003546001600160a01b031633146102cf576040517fa885690200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b60008181526004602052604090205460ff16610317576040517fcce1652700000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b6001829055600081815260046020908152604091829020805460ff1916905581518481529081018390527ffe5f1c3744bbb93387823f3e2892e167f0b4d7fe0bce5955d6b5f2599f42d27c910160405180910390a15050565b610378610474565b600380546001600160a01b03831673ffffffffffffffffffffffffffffffffffffffff19918216811790925560028054909116821790556040519081527f441e3b056b114797955165bd03bb8393fc1658a713f09225de4745a8d068bf7d90602001610280565b6103e7610474565b6001600160a01b0381166104685760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201527f646472657373000000000000000000000000000000000000000000000000000060648201526084015b60405180910390fd5b610471816104ce565b50565b6000546001600160a01b031633146101a85760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015260640161045f565b600080546001600160a01b0383811673ffffffffffffffffffffffffffffffffffffffff19831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000806040838503121561053e57600080fd5b50508035926020909101359150565b60006020828403121561055f57600080fd5b81356001600160a01b038116811461057657600080fd5b9392505050565b60006020828403121561058f57600080fd5b505191905056fea26469706673582212201e59ac0d595197b86e38cc8b3f518c8e09d221072e29458cbb66954ab1a16bee64736f6c63430008130033",
+  "deployedBytecode": "0x6080604052600436106100695760003560e01c8063b5d73ba411610043578063b5d73ba414610136578063e9e17a9e14610156578063f2fde38b14610176576100a9565b8063715018a6146100de57806383f87524146100f55780638da5cb5b1461010a576100a9565b366100a957604080513381523460208201527fc0cdab6ced19ce3372efda53aec6b0802e63718e5aa5b77807792330f5b5aab991015b60405180910390a1005b604080513381523460208201527fc0cdab6ced19ce3372efda53aec6b0802e63718e5aa5b77807792330f5b5aab9910161009f565b3480156100ea57600080fd5b506100f3610196565b005b34801561010157600080fd5b506100f36101aa565b34801561011657600080fd5b50600054604080516001600160a01b039092168252519081900360200190f35b34801561014257600080fd5b506100f361015136600461052b565b61028b565b34801561016257600080fd5b506100f361017136600461054d565b610370565b34801561018257600080fd5b506100f361019136600461054d565b6103df565b61019e610474565b6101a860006104ce565b565b600254604080517fb34c55f400000000000000000000000000000000000000000000000000000000815290516000926001600160a01b03169163b34c55f4916004808301926020929190829003018187875af115801561020e573d6000803e3d6000fd5b505050506040513d601f19601f82011682018060405250810190610232919061057d565b60008181526004602052604090819020805460ff19166001179055519091507f3ed150819af981e387450beb90ec379b8b322150dbb299d492b108c59a623e4b906102809083815260200190565b60405180910390a150565b6003546001600160a01b031633146102cf576040517fa885690200000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b60008181526004602052604090205460ff16610317576040517fcce1652700000000000000000000000000000000000000000000000000000000815260040160405180910390fd5b6001829055600081815260046020908152604091829020805460ff1916905581518481529081018390527ffe5f1c3744bbb93387823f3e2892e167f0b4d7fe0bce5955d6b5f2599f42d27c910160405180910390a15050565b610378610474565b600380546001600160a01b03831673ffffffffffffffffffffffffffffffffffffffff19918216811790925560028054909116821790556040519081527f441e3b056b114797955165bd03bb8393fc1658a713f09225de4745a8d068bf7d90602001610280565b6103e7610474565b6001600160a01b0381166104685760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201527f646472657373000000000000000000000000000000000000000000000000000060648201526084015b60405180910390fd5b610471816104ce565b50565b6000546001600160a01b031633146101a85760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e6572604482015260640161045f565b600080546001600160a01b0383811673ffffffffffffffffffffffffffffffffffffffff19831681178455604051919092169283917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e09190a35050565b6000806040838503121561053e57600080fd5b50508035926020909101359150565b60006020828403121561055f57600080fd5b81356001600160a01b038116811461057657600080fd5b9392505050565b60006020828403121561058f57600080fd5b505191905056fea26469706673582212201e59ac0d595197b86e38cc8b3f518c8e09d221072e29458cbb66954ab1a16bee64736f6c63430008130033",
+  "devdoc": {
+    "author": "vidhan.mangla@mqube.com",
+    "details": "will add later if necessary",
+    "kind": "dev",
+    "methods": {
+      "owner()": {
+        "details": "Returns the address of the current owner."
+      },
+      "renounceOwnership()": {
+        "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions anymore. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby removing any functionality that is only available to the owner."
+      },
+      "transferOwnership(address)": {
+        "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+      }
+    },
+    "title": "client contract",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "callback(uint256,uint256)": {
+        "notice": "updates the offChainData received"
+      },
+      "setOracleInstanceAddress(address)": {
+        "notice": "set the address of an oracle instance"
+      },
+      "updateOffChainData()": {
+        "notice": "receives the request id from the oracle"
+      }
+    },
+    "notice": "this contract uses the oracle interface to interact and pull decentralized data from the oracle",
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 195,
+        "contract": "contracts/Client.sol:Client",
+        "label": "_owner",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 12,
+        "contract": "contracts/Client.sol:Client",
+        "label": "offChainData",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 15,
+        "contract": "contracts/Client.sol:Client",
+        "label": "oracleInstance",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_contract(OracleInterface)187"
+      },
+      {
+        "astId": 17,
+        "contract": "contracts/Client.sol:Client",
+        "label": "oracleAddress",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_address"
+      },
+      {
+        "astId": 21,
+        "contract": "contracts/Client.sol:Client",
+        "label": "myRequests",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_mapping(t_uint256,t_bool)"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(OracleInterface)187": {
+        "encoding": "inplace",
+        "label": "contract OracleInterface",
+        "numberOfBytes": "20"
+      },
+      "t_mapping(t_uint256,t_bool)": {
+        "encoding": "mapping",
+        "key": "t_uint256",
+        "label": "mapping(uint256 => bool)",
+        "numberOfBytes": "32",
+        "value": "t_bool"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}
